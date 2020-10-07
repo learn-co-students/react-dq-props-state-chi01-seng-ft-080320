@@ -9,7 +9,6 @@ export default class MasterHog extends Component {
     super()
     this.state = {
       eyeColor: "blue",
-      weight: 0
     }
   }
 
@@ -44,7 +43,7 @@ export default class MasterHog extends Component {
         
         <ul className="hoglist">
           {offspring.map(babyhog => (
-            <BabyHog key={babyhog.id} name={babyhog.name} hobby={babyhog.hobby} eyeColor={this.state.eyeColor} weight={this.state.weight}/>
+            <BabyHog key={babyhog.id} name={babyhog.name} hobby={babyhog.hobby} eyeColor={this.state.eyeColor}/>
           ))}
         </ul>
 
